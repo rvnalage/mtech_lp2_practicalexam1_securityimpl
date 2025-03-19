@@ -1,0 +1,19 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: ecommerce
+
+
+# Enable CORS for frontend communication (Optional)
+cors:
+  allowed-origin-patterns: "http://localhost:*"
+  allowed-methods: "GET,POST,PUT,DELETE,OPTIONS"
+  allowed-headers: "*"
+  allow-credentials: true
+
+# Custom Configuration for Local Development
+ecommerce:
+  admin:
+    username: admin
+    password: admin123

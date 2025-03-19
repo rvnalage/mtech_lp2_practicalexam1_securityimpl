@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: ecommerce-app
+
+server:
+  port: 8080
+
+# JWT Configuration
+security:
+  jwt:
+    secret: J9bVq3zY2Pb7x4K8Q2tFm5GhT8nV9yQ4Z3mG6hP2qL5sD7uR1cT8wU6yM3vQ9aR
+    expiration: 86400000  # 1 day in milliseconds
+
+razorpay:
+  key: admin
+  secret: admin123
+
+logging:
+  level:
+    org.springframework: INFO
+    com.example.ecommerce: DEBUG
